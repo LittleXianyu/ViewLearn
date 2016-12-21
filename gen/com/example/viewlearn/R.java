@@ -9,6 +9,26 @@ package com.example.viewlearn;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ninephoto_hspace=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ninephoto_vspace=0x7f010004;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -50,13 +70,30 @@ containing a value of this type.
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int add=0x7f020000;
+        public static final int btn_alarms_more=0x7f020001;
+        public static final int btn_alarms_up=0x7f020002;
+        public static final int category_list_divider=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int preview=0x7f020005;
+        public static final int sample_0=0x7f020006;
+        public static final int sample_1=0x7f020007;
+        public static final int sample_2=0x7f020008;
+        public static final int sample_3=0x7f020009;
+        public static final int sample_4=0x7f02000a;
+        public static final int sample_5=0x7f02000b;
+        public static final int sample_6=0x7f02000c;
+        public static final int sample_7=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080003;
+        public static final int button1=0x7f080001;
+        public static final int button3=0x7f080002;
+        public static final int layout_button=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int fatherandson=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -95,6 +132,53 @@ containing a value of this type.
         public static final int AppTheme=0x7f060001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a NinePhotoView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NinePhotoView_ninephoto_hspace com.example.viewlearn:ninephoto_hspace}</code></td><td></td></tr>
+           <tr><td><code>{@link #NinePhotoView_ninephoto_vspace com.example.viewlearn:ninephoto_vspace}</code></td><td></td></tr>
+           </table>
+           @see #NinePhotoView_ninephoto_hspace
+           @see #NinePhotoView_ninephoto_vspace
+         */
+        public static final int[] NinePhotoView = {
+            0x7f010003, 0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.viewlearn.R.attr#ninephoto_hspace}
+          attribute's value can be found in the {@link #NinePhotoView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.viewlearn:ninephoto_hspace
+        */
+        public static final int NinePhotoView_ninephoto_hspace = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.viewlearn.R.attr#ninephoto_vspace}
+          attribute's value can be found in the {@link #NinePhotoView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.viewlearn:ninephoto_vspace
+        */
+        public static final int NinePhotoView_ninephoto_vspace = 1;
         /** Attributes that can be used with a rainbowbar.
            <p>Includes the following attributes:</p>
            <table>

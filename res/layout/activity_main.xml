@@ -10,15 +10,63 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" 
     android:orientation="vertical">
-
-    <com.example.viewlearn.RainbowBar 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <com.example.viewlearn.view.RainbowBar 
 	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
+	    android:layout_height="match_parent"
 	    rainbow1:rainbowbar_color="#766698"
 	    rainbow1:rainbowbar_hspace="80dp"
-	    rainbow1:rainbowbar_vspace="10dp"
-    />
+	    rainbow1:rainbowbar_vspace="10dp"></com.example.viewlearn.view.RainbowBar>
+    <com.example.viewlearn.view.FourButtonViewGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
 
+        <Button
+            android:text="1"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <Button
+            
+            android:text="2"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <Button
+            android:text="3"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <Button
+            android:text="4"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        </com.example.viewlearn.view.FourButtonViewGroup>
+    <com.example.viewlearn.view.NinePhotoView
+    android:layout_width="600px"
+    android:layout_height="wrap_content">
+        </com.example.viewlearn.view.NinePhotoView>
 
+<com.example.viewlearn.view.CollapsExpendView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></com.example.viewlearn.view.CollapsExpendView>
 
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/holo_green_light">
+ 
+
+    </LinearLayout>
+    </LinearLayout>
+   </ScrollView>
 </LinearLayout>

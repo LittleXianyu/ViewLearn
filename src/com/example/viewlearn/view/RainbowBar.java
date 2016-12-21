@@ -1,4 +1,7 @@
-package com.example.viewlearn;
+package com.example.viewlearn.view;
+
+import com.example.viewlearn.R;
+import com.example.viewlearn.R.styleable;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,10 +9,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 
 public class RainbowBar extends View {
-
+	public static String TAG="RainbowBar";
 	  //progress bar color
 	  int barColor = Color.parseColor("#1E88E5");
 	  //every bar segment width
@@ -78,16 +83,17 @@ public class RainbowBar extends View {
 	  @Override
 	  protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 	          super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-	          int width = getMySize(200, widthMeasureSpec);
-	          int height = getMySize(200, heightMeasureSpec);
-
-	          if (width < height) {
-	              height = width;
-	          } else {
-	              width = height;
-	          }
-
-	          setMeasuredDimension(width, height);
+	       
+	          int width = getMySize(100, widthMeasureSpec);
+	          int height = getMySize(100, heightMeasureSpec);
+	          Log.i(TAG,"width:  "+width+"  height:  "+height);
+	          WindowManager wm = (WindowManager) getContext()
+	                    .getSystemService(Context.WINDOW_SERVICE);
+	 
+	     int width1 = wm.getDefaultDisplay().getWidth();
+	     int height1 = wm.getDefaultDisplay().getHeight();
+	     Log.i(TAG,"width1:  "+width1+"  height1:  "+height1);
+	          setMeasuredDimension(width, 100);
 	  }
 	  private int getMySize(int defaultSize, int measureSpec) {
 	        int mySize = defaultSize;
@@ -101,7 +107,7 @@ public class RainbowBar extends View {
 	                break;
 	            }
 	            case MeasureSpec.AT_MOST: {//如果测量模式是最大取值为size
-	                //我们将大小取最大值,你也可以取其他值
+	                //我们将大小取最大值,最大值是该View在父View中能显示的最大size。
 	                mySize = size;
 	                break;
 	            }
